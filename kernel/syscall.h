@@ -20,3 +20,7 @@
 #define SYS_link   19
 #define SYS_mkdir  20
 #define SYS_close  21
+#define SYS_peterson_create 22 // Add new syscall numbers task 1
+#define SYS_peterson_acquire 23 // Add new syscall numbers task 1
+#define SYS_peterson_release 24 // Add new syscall numbers task 1
+#define SYS_peterson_destroy 25 // Add new syscall numbers task 1

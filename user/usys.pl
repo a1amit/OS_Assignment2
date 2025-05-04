@@ -36,3 +36,7 @@ entry("getpid");
 entry("sbrk");
 entry("sleep");
 entry("uptime");
+entry("peterson_create");  #task 1
+entry("peterson_acquire"); #task 1
+entry("peterson_release"); #task 1
+entry("peterson_destroy"); #task 1

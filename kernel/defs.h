@@ -124,6 +124,9 @@ void            releasesleep(struct sleeplock*);
 int             holdingsleep(struct sleeplock*);
 void            initsleeplock(struct sleeplock*, char*);
 
+// peterson.c
+void            peterson_init(void); //task 1
+
 // string.c
 int             memcmp(const void*, const void*, uint);
 void*           memmove(void*, const void*, uint);
@@ -140,6 +143,13 @@ void            argaddr(int, uint64 *);
 int             fetchstr(uint64, char*, int);
 int             fetchaddr(uint64, uint64*);
 void            syscall();
+
+// sysproc.c
+uint64          sys_close(void); //task 1
+uint64          sys_peterson_create(void); //task 1
+uint64          sys_peterson_acquire(void); //task 1
+uint64          sys_peterson_release(void); //task 1
+uint64          sys_peterson_destroy(void); //task 1
 
 // trap.c
 extern uint     ticks;
