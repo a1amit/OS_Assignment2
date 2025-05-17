@@ -1,5 +1,5 @@
+#include "kernel/types.h"
 struct stat;
-
 // system calls
 int fork(void);
 int exit(int) __attribute__((noreturn));
@@ -26,6 +26,9 @@ int peterson_create(void); //task 1
 int peterson_acquire(int lock_id, int role); //task 1
 int peterson_release(int lock_id, int role); //task 1
 int peterson_destroy(int lock_id); //task 1
+int tournament_create(int processes); //task 2
+int tournament_acquire(void); //task 2
+int tournament_release(void); //task 2
 
 // ulib.c
 int stat(const char*, struct stat*);
